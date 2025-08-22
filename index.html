@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thenura Sathmira - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Mouse Effect Glow -->
+  <div class="cursor-glow"></div>
+
+  <header>
+    <nav>
+      <h2 class="logo">Portfolio.</h2>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-text">
+      <h3>Hello, It's Me</h3>
+      <h1>Thenura Sathmira</h1>
+      <h2>And I'm a <span>Future Software Engineer</span></h2>
+      <p>I love coding, design, and building high-tech solutions.</p>
+      
+      <div class="social-links">
+        <a href="https://facebook.com/YOUR_FACEBOOK" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com/YOUR_INSTAGRAM" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+
+      <a href="#" class="btn">Download CV</a>
+    </div>
+
+    <!-- PHOTO + ANIMATED FRAME -->
+    <div class="home-photo">
+      <div class="circle-animate"></div>
+      <img src="your-photo.png" alt="Thenura">
+    </div>
+  </section>
+
+  <script>
+    // Mouse glow effect
+    const cursorGlow = document.querySelector('.cursor-glow');
+    document.addEventListener('mousemove', e => {
+      cursorGlow.style.left = e.pageX + 'px';
+      cursorGlow.style.top = e.pageY + 'px';
+    });
+  </script>
+</body>
+</html>
